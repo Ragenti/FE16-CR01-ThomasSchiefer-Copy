@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeReview01-Main</title>
+    <link ref = "stylesheet" type = "text/css" href = "index.css">
+    <style>
+        html{
+            position: absolute;
+            width: 2000px;
+            height: 1000px;
+        }
+        /*My Live Server extension often fails to display the external .css file (it worked once, but didnt work again for this CR), so i coded it here to have a preview*/
+        header{
+            
+            height: 10%;
+            background-color: black;
+           
+            
+        }
+        header > img{
+            position: absolute;
+            width: auto;
+            height: 9%;
+            transform: translate(2%, -5%);
+        }
+        #navlist{
+            
+            
+            text-align: right;
+            padding-right: 0%;
+        }
+        .button{
+            background-color: #8C181B;
+            font-size: 12pt;
+            font-weight: bold;
+            color: #FFFFFF;
+            width: 5%;
+            padding: 0.8% 0%;
+            border-radius: 25%;
+            position: relative;
+            transform: translate(0, -9%);
+            
+        }
+        #login{
+            
+            margin-left: 2%;
+            margin-right: 1%;
+        }
+        #signup{
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        .search{
+            margin-left: 0;
+            
+        }
+        input{
+            width: 67%;
+            font-size: 20pt;
+            height: 100%;
+        }
+        li{
+            list-style-type: none;
+        }
+        .headerlist{
+            
+            display: inline;
+
+
+        }
+        main{
+            position: static;
+            
+            height: 70%;
+            width: auto;
+            
+
+        
+
+        }
+        #laptop{
+            position: relative;
+            color:#FFFFFF;
+            text-align: left;
+            height: 40%;
+            transform: translate(28%, 95%);
+            
+            
+        }
+        #device{
+            width: 7%;
+            height: 35%;
+            
+            
+            
+        }
+        #laptop > h2{
+            font-size: 250%;
+            margin-bottom: 0%;
+    
+        }
+        #laptop > p{
+            margin-top: 0.5%;
+            margin-bottom: 0%;
+            font-weight: bold;
+            font-size: 120%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            height: 95%;
+            width: 95%;
+            background-image: url('keyboard.jpg');
+            background-repeat: no-repeat;
+            background-size:  114%;
+            background-position: center;
+            background-position-y: 180%;
+            overflow-x: hidden;
+            
+        }
+        #ct{
+            margin-top:10%;
+            background-color: #1A1818;
+            background-size: 110% 100%;
+            text-align: center;
+            height: 40%;
+
+        }
+        #ct:before{
+            content:"";
+            position: absolute;
+            background-color: #1A1818;
+            height: 50%;
+            width: 4000px;
+            left: -2000px;
+            z-index: -1;
+        }
+        h1{
+            padding-top: 1%;
+            color:#FFFFFF;
+            font-weight: bold;
+            font-size: 350%;
+            text-shadow: 3pt 3pt 2pt #969696;
+            text-align: center;
+        }
+        .bluebox{
+            border-radius: 5%;
+            text-align: center;
+            background-color: #235A8D;
+            display: inline-block;
+            color: white;
+            font-size: 120%;
+            position: relative;
+            width: 21%;
+            height: 90%;
+            
+            
+            
+        }
+        #backend{
+            margin-right: 2%;
+            margin-left: 2%;
+
+        }
+        .blueboxlist{
+            height: 38%;
+            padding: 0;
+            margin-bottom: 0;
+            padding-bottom: 0%;
+        }
+        hr{
+            width: 80%;
+            margin-bottom: -2%;
+            
+            
+        }
+        
+        .whitebutton{
+            margin-top: 1%;
+            margin-bottom: 5%;
+            padding: 2%;
+            font-size: 90%;
+        }
+        .blueboxheadline{
+            margin-top: 4%;
+            margin-bottom: 5%;;
+
+        }
+        footer{
+            margin-top: 10%;
+            padding-top: 0%;
+            text-align: center;
+            color: white;
+        }
+        footer:before{
+            content:"";
+            position: absolute;
+            background-color: black;
+            height: 23%;
+            width: 4000px;
+            left: -2000px;
+            z-index: -1;
+        }
+        #logo{
+            margin-top: 1%;
+            width: 10%;
+            height: 10%;
+        }
+        #name{
+            font-size: 14pt;
+            margin-bottom: 0;
+            
+            
+        }
+        #links>a{
+            padding-right: 0.5%;
+            padding-left: 0.5%;
+        }
+        #blog{
+            border-left: 1pt solid blue;
+            border-right:1pt solid blue;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="CFLOGO.png" id = "headerlogo">
+        <nav>
+            <ul id = "navlist">
+              <li class = "headerlist" class = "search">
+                <input type = "text">
+              </li>
+              <li class = "headerlist" class = "buttonlist">
+                <button type = "button" class = "button" id = "login">LogIn</button>
+              </li>
+              <li class = "headerlist" class = "buttonlist">
+                <button type = "button" class = "button" id = "signup">SignUp</button>
+              </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id = "laptop">
+                <h2>CodeFactory FSWD</h2>
+                <p>This course is specially designed to introduce you to the WebDev world.</p>
+                <img id = "device" src = "devices.png">
+        </div>
+        <section id = "ct">
+                <h1>Course Technologies</h1>
+                <div class = "bluebox" id = "frontend">
+                    <h2 class = "blueboxheadline">Front End</h2>
+                    <hr>
+                    <ul class = "blueboxlist">
+                        <li class = "bluelistelements">
+                            HTML
+                        </li>
+                        <li class = "bluelistelements">
+                            CSS
+                        </li>
+                        <li class = "bluelistelements">
+                            JS
+                        </li>
+                        <li class = "bluelistelements">
+                            Angular
+                        </li>
+                    </ul>
+                    <button class = "whitebutton">Click to see more</button>
+                </div>
+                <div class = "bluebox" id = "backend">
+                    <h2 class = "blueboxheadline">Back End</h2>
+                    <hr>
+                    <ul class = "blueboxlist">
+                        <li class = "bluelistelements">
+                            MySql
+                        </li>
+                        <li class = "bluelistelements">
+                            PHP
+                        </li>
+                        <li class = "bluelistelements">
+                            Symfony
+                        </li>
+                    </ul>
+                    <button class = "whitebutton">Click to see more</button>
+                </div>
+                <div class = "bluebox" id = "projects">
+                    <h2 class = "blueboxheadline">Projects</h2>
+                    <hr>
+                    <ul class = "blueboxlist">
+                        <li class = "bluelistelements">
+                            Front End Project
+                        </li>
+                        <li class = "bluelistelements">
+                            Full Stack Project
+                        </li>
+                    </ul>
+                    <button class = "whitebutton">Click to see more</button>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <img id = "logo" src = "CFLOGO.png">
+        <p id = "name">Thomas Schiefer - CodeFactory &copy;</p>
+        <p><i>All rights reserved</i></p>
+        <p id = "links"><a href="about.html"> About </a><a href="blog.html" id = "blog"> Blog </a><a href="termsofuse.html"> Terms Of Use </a></p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
